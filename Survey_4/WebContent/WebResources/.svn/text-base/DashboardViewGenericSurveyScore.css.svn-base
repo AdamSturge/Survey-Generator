@@ -1,0 +1,30 @@
+#viewGenericScoreTitle{
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#genericSurveyListTable{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 692px;
+}
+#genericSurveyListTable th{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color:orange;
+}
+
+#genericSurveyListTable td:hover{
+	background-color: #D6DEE4;
+	color: #2F2F2F;
+}
+.genericSurveyTitle{
+	text-align: Left;
+	width: 300px;
+	padding-left: 10px;
+}
+td.genericSurveyTitle{
+	cursor: pointer;
+}

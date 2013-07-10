@@ -1,0 +1,118 @@
+/***********************************
+*  Survey List Table CSS
+************************************/
+
+#manageSurveyTitle{
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#surveyListTable{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#surveyListTable th{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color:orange;
+}
+
+#surveyListTable td:hover{
+	background-color: #D6DEE4;
+	color: #2F2F2F;
+}
+
+.adminSurveyListTitle, .userSurveyListTitle, .userJobfairTitle{
+	text-align: Left;
+	width: 300px;
+	padding-left: 10px;
+}
+
+.userJobfairTitle{
+	width: 150px;
+}
+
+td.adminSurveyListTitle, td.userSurveyListTitle{
+	cursor: pointer;
+}
+
+#surveyListTable .surveyListAction{
+	text-align:center;
+	width: 100px;
+}
+
+
+#surveyListTable td input{
+	width: 100px;
+	background-color: rgba(0,0,0,0);
+	color: #98C5AB;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#surveyListTable td input:hover{
+	color: #2F2F2F;
+}
+
+/***********************************
+*  Match Result Table CSS
+************************************/
+#matchResultTable{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#matchResultTable .titleItem div{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color:orange;
+}
+
+#matchResultTable .matchItem div:hover{
+	background-color: #D6DEE4;
+	color: #2F2F2F;
+}	
+
+#matchResultTable .titleItem div, #matchResultTable .matchItem div{
+	display: inline-block;
+	margin: 1px;
+}
+
+#matchResultTable .titleItem .match_uid, #matchResultTable .matchItem .match_uid{
+	text-align: Left;
+	width: 250px;
+}
+
+#matchResultTable .titleItem .match_score, #matchResultTable .matchItem .match_score{
+	text-align:center;
+	width: 150px;
+}
+
+#matchResultTable .titleItem .match_name, #matchResultTable .matchItem .match_name{
+	text-align:center;
+	width: 140px;
+}
+
+#matchResultTable .titleItem .match_email, #matchResultTable .matchItem .match_email{
+	text-align:center;
+	width: 225px;
+}
+
+#matchResultTable .titleItem .match_phone, #matchResultTable .matchItem .match_phone{
+	text-align:center;
+	width: 200px;
+}
+
+
+
+#matchResultTable .matchItem div{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color: rgb(235, 233, 205);
+}

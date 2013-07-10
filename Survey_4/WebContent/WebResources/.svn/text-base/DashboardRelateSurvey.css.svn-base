@@ -1,0 +1,52 @@
+#relateSurveyTitle{
+	width: 758px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#relateSurveyTable{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#relateSurveyTable th, #relateSurveyTable td{
+	width: 250px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+#relateSurveyTable th{
+	
+}
+
+#relateSurveyTable td{
+	height: 320px;
+}
+
+#relateSurveyTable .listContainer{
+	height: 320px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.relateSurveyJobfairItem, .relateSurveyRelatedSurveyItem, .relateSurveyRelatableSurveyItem{
+	border: 1px solid #CCB647;
+	-webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.relateSurveyJobfairItem:hover, .relateSurveyRelatedSurveyItem:hover, .relateSurveyRelatableSurveyItem:hover{
+	background-color: #98C5AB;
+	color: #2F2F2F;
+}
+
+img.removeRelatedSurveyItem, img.addUnrelatedSurveyItem{
+	width: 20px;
+	height: 20px;
+}

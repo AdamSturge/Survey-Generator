@@ -1,0 +1,206 @@
+html *{
+	position: relative;
+}
+
+html{
+	background: none;
+	background-color: #e5e5e5;
+}
+
+body{
+	
+}
+
+.screenElements{
+	border: 1px solid #666666;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#monitor{
+	margin-top: 2px;
+	margin-left:auto;
+	margin-right: auto;
+	width: 980px;
+	height: 635px;
+	background-image: linear-gradient(left , rgb(153,153,153) 28%, rgb(204,204,204) 64%);
+	background-image: -o-linear-gradient(left , rgb(153,153,153) 28%, rgb(204,204,204) 64%);
+	background-image: -moz-linear-gradient(left , rgb(153,153,153) 28%, rgb(204,204,204) 64%);
+	background-image: -webkit-linear-gradient(left , rgb(153,153,153) 28%, rgb(204,204,204) 64%);
+	background-image: -ms-linear-gradient(left , rgb(153,153,153) 28%, rgb(204,204,204) 64%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right bottom,
+		color-stop(0.28, rgb(153,153,153)),
+		color-stop(0.64, rgb(204,204,204))
+	);
+}
+
+#lcdBorder{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 550px;
+	width: 968px;
+	background-image: linear-gradient(left bottom, rgb(0,0,0) 42%, rgb(51,54,59) 71%);
+	background-image: -o-linear-gradient(left bottom, rgb(0,0,0) 42%, rgb(51,54,59) 71%);
+	background-image: -moz-linear-gradient(left bottom, rgb(0,0,0) 42%, rgb(51,54,59) 71%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(0,0,0) 42%, rgb(51,54,59) 71%);
+	background-image: -ms-linear-gradient(left bottom, rgb(0,0,0) 42%, rgb(51,54,59) 71%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.42, rgb(0,0,0)),
+		color-stop(0.71, rgb(51,54,59))
+	);
+}
+
+#lcd{
+	width: 938px;
+	height: 520px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: #f0f0f0;
+	overflow: hidden;
+}
+
+#UserControlPanel{
+	width: 938px;
+	height: 62px;
+	position: absolute;
+	top: 565px;
+	left: 15px;
+}
+
+.UserControlPanelButton{
+	width: 60px;
+	height: 60px;
+	border: 1px solid 666666;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#logoutButton{
+	top: 0px;
+	left: 876px;
+}
+
+#memorialButton{
+	top: 0px;
+	left: 804px;
+}
+
+#manageSurveyButton{
+	top: 0px;
+	left: 0px;
+}
+
+#manageUserSurveyButton{
+	top: 0px;
+	left: 72px;
+}
+
+#createNewSurveyButton{
+	top: 0px;
+	left: 144px;
+}
+
+#relateSurveyButton{
+	top: 0px;
+	left: 216px;
+}
+
+#viewGenericScoreButton{
+	top: 0px;
+	left: 655px;
+}
+
+#systemMsg{
+	position:absolute;
+	top: 0px;
+	left: 319px;
+	color: white;
+	font-weight:bold;
+	font-size: 15px;
+	text-align: center;
+}
+
+#titlePanel{
+	position:absolute;
+	top: 30px;
+	left: 319px;
+	height: 30px;
+	width: 300px;
+	padding-bottom: 20xp;
+	border: 1px #e6e6e6 solid;
+	-webkit-box-shadow:  1px 1px 0px 0px rgba(66, 66, 66, 66);
+    box-shadow:  1px 1px 0px 0px rgba(66, 66, 66, 66);
+    -webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#titleText{
+	color: #232323;
+	text-align: center;
+	font-size: 20px;
+}
+
+#titleText h4{
+	font-weight: 200;
+}
+
+#manageSurveyPanel, #manageUserSurveyPanel, #createNewSurveyPanel, #relateSurveyPanel, #viewGenericSurveyScorePanel{
+	display: none;
+}
+
+
+/**** Enforce similar Views for tables for this website ***/
+th{
+	background-image: linear-gradient(bottom, rgb(5,5,5) 25%, rgb(102,102,102) 59%);
+	background-image: -o-linear-gradient(bottom, rgb(5,5,5) 25%, rgb(102,102,102) 59%);
+	background-image: -moz-linear-gradient(bottom, rgb(5,5,5) 25%, rgb(102,102,102) 59%);
+	background-image: -webkit-linear-gradient(bottom, rgb(5,5,5) 25%, rgb(102,102,102) 59%);
+	background-image: -ms-linear-gradient(bottom, rgb(5,5,5) 25%, rgb(102,102,102) 59%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(5,5,5)),
+		color-stop(0.59, rgb(102,102,102))
+	);
+	color: #CE7898;
+	
+}
+
+td{
+	background-color: #2F2F2F;
+	color: #CCB647;
+}
+
+td a:link{
+	color: #CCB647;
+}
+
+td a:visited{
+	color: #CCB647;
+}
+
+/*
+a:link {text-decoration: none;} //the original link with no underline
+a:visited {text-decoration: none;} //the visited link with no underline
+a:hover {text-decoration: underline;} //mouseover link and an underline appears
+*/
+
+.loadingGraphics{
+	
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,296 @@
+	* { 
+	  margin: 0; 
+	  padding: 0;
+	  position: relative;
+	} 
+	
+	@font-face {
+		font-family: SFOrsonCasualHeavy;
+		src: url('SFOrsonCasualHeavy.ttf');
+	}
+	
+	@font-face {
+		font-family: MalgecitoOTF;
+		src: url('MalgecitoOTF.otf');
+	}
+	
+	@font-face {
+		font-family: Impact;
+		src: url('impact.ttf');
+	}
+	
+	html { 
+	    height: 100%; 
+	  	width: 100%;
+		background: url('background_cs4770.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	h1, h2, h3, h4, h5{
+		/*font-family:MalgecitoOTF;	*/
+		font-family: Impact;
+		font-weight: 200;
+	}
+	
+	h1{
+		font-size: 50px;
+	}
+	
+	h2{
+		font-size: 36px;
+	}
+	
+	body{
+		/*
+		background-image: linear-gradient(left , rgb(255,68,0) 0%, rgb(255,197,97) 68%, rgb(255,212,127) 84%);
+		background-image: -o-linear-gradient(left , rgb(255,68,0) 0%, rgb(255,197,97) 68%, rgb(255,212,127) 84%);
+		background-image: -moz-linear-gradient(left , rgb(255,68,0) 0%, rgb(255,197,97) 68%, rgb(255,212,127) 84%);
+		background-image: -webkit-linear-gradient(left , rgb(255,68,0) 0%, rgb(255,197,97) 68%, rgb(255,212,127) 84%);
+		background-image: -ms-linear-gradient(left , rgb(255,68,0) 0%, rgb(255,197,97) 68%, rgb(255,212,127) 84%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			color-stop(0, rgb(255,68,0)),
+			color-stop(0.68, rgb(255,197,97)),
+			color-stop(0.84, rgb(255,212,127))
+		);
+		background-color: red;
+		*/
+	}
+	
+	.button{
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+		height: 25px;
+		width: 130px;
+		background-image: linear-gradient(bottom, rgb(250,250,35) 0%, rgb(245,164,24) 50%);
+		background-image: -o-linear-gradient(bottom, rgb(250,250,35) 0%, rgb(245,164,24) 50%);
+		background-image: -moz-linear-gradient(bottom, rgb(250,250,35) 0%, rgb(245,164,24) 50%);
+		background-image: -webkit-linear-gradient(bottom, rgb(250,250,35) 0%, rgb(245,164,24) 50%);
+		background-image: -ms-linear-gradient(bottom, rgb(250,250,35) 0%, rgb(245,164,24) 50%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(250,250,35)),
+			color-stop(0.5, rgb(245,164,24))
+		);
+		border: 2px solid white;
+		-webkit-box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+		box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+		text-align: center;
+		
+		font-family: SFOrsonCasualHeavy;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	
+	.button:hover{
+		background-image: linear-gradient(bottom, rgb(230,230,230) 0%, rgb(245,245,24) 50%);
+		background-image: -o-linear-gradient(bottom, rgb(230,230,230) 0%, rgb(245,245,24) 50%);
+		background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 0%, rgb(245,245,24) 50%);
+		background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 0%, rgb(245,245,24) 50%);
+		background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 0%, rgb(245,245,24) 50%);
+		
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(230,230,230)),
+			color-stop(0.5, rgb(245,245,24))
+		);
+	}
+	
+	#page{
+		position: relative;
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#header{
+		margin-top: 10px;
+	}
+	
+	#header h2{
+		margin-left: 180px;
+	}
+	
+	#main{
+		padding-top: 90px;
+	}
+	
+	#registration, #login, #splitter{
+		position:absolute;
+		/*height:400px;*/
+		font-family: SFOrsonCasualHeavy;
+		font-size: 20px;
+		top: 60px;
+	}
+	
+	#splitter{
+		left: 452px;
+		border: 1px solid white;
+		-webkit-box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+		box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+	}
+	
+	#registration, #login{
+		width:450px;
+		padding: 15px;
+	}
+	
+	#login{
+		left: 480px;
+		-webkit-border-radius: 15px;
+    	-webkit-border-radius: 15px;
+    	border-radius: 15px;
+    	border: 2px solid #2f2f2f;
+		width: 420px;
+		height:200px;
+	}
+	
+	#registration{
+		left: 2000px;
+		-webkit-border-radius: 15px;
+    	border-radius: 15px;
+    	border: 2px solid #2f2f2f;
+		width: 420px;
+		height:400px;
+	}
+	
+	#toggleregister{
+		width: 200px;
+		position: absolute;
+		left: 85px;
+		top: 100px;
+	}
+	
+	#togglelogin{
+		width: 200px;
+		position: absolute;
+		left: 150px;
+		top: 320px;
+	}
+	
+	#munlogo{
+		left: 345px;
+		top: -5px;
+		-webkit-box-shadow:  0px 2px 4px 4px #555;
+        box-shadow:  0px 2px 4px 4px #555;
+        -webkit-border-radius: 5px;
+    	border-radius: 5px;
+    	border: 1px solid #989898;
+	}
+	
+	#loginButton{
+		top: 0px;
+		left: 876px;
+	}
+	
+	#registerButton{
+		top: 0px;
+		left: 876px;
+		display:none;
+	}
+	
+	#registration span,  #registration input{
+		margin: 5px;
+	}
+	
+	#registration span{
+		display: inline-block;
+		width: 150px;
+	}
+	
+	.ColorChange1{
+		
+		color:White;
+	}
+	
+	.Message{
+		
+		color:Green;
+		font-size:12px;
+		font-family:"Times New Roman";
+		bottom:25px;
+	}
+	
+	.Warn{
+		
+		color:Red;
+		font-size:12px;
+		font-family:"Times New Roman";
+		
+	}
+	
+	.WarnEmail{
+		bottom:25px;
+		left:350px;
+	}
+	
+	
+	.WarnUserName{
+		
+		left:220px;
+	}
+	
+	.WarnPassword{
+		button:100px;
+		left:350px;
+	}
+	
+	#loginform{
+
+	}
+	
+	.logininput{
+		border: 1px solid white;
+		-webkit-box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+		box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+	}
+	
+	
+	.logininputR{
+		border: 1px solid white;
+		-webkit-box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+		box-shadow:  0px 0px 10px 5px rgba(22, 22, 22, 1);
+	}
+	
+	
+	
+	
+	
+	
+	#newAccountU, #logIn{
+		position: absolute;
+		top: 340px;
+		left: 250px;
+	}
+	
+	#check
+	{
+			position: absolute;
+		top: 280px;
+		left: 50px;
+		
+	}
+	
+	#rsub
+	{
+		display:none;
+	}
+	
+	
+	#newAccountC{
+		position: absolute;
+		top: 340px;
+		left: 50px;
+	}

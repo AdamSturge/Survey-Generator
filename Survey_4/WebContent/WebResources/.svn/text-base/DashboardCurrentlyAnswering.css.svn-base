@@ -1,0 +1,41 @@
+#manageUserSurveyTitle{
+	width: 625px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#userSurveyListTable{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#userSurveyListTable th{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background-color:orange;
+}
+
+#userSurveyListTable td:hover{
+	background-color: #D6DEE4;
+	color: #2F2F2F;
+}
+
+#userSurveyListTable td *:hover{
+	color: #2F2F2F;
+}
+
+#userSurveyListTable .surveyListTitle{
+	text-align: Left;
+	width: 400px;
+	padding-left: 10px;
+}
+
+#userSurveyListTable .surveyListAction, #userSurveyListTable .Author{
+	text-align:center;
+	width: 100px;
+}
+
+#userSurveyListTable .userJobfairTitle{
+	width: 200px;
+}

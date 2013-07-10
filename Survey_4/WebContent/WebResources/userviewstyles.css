@@ -1,0 +1,331 @@
+* { 
+  margin: 0; 
+  padding: 0;
+  z-index: 2;
+}
+
+@font-face {
+	font-family: Infinity;
+	src: url('Infinity.ttf');
+}
+
+html {
+	background: none;
+	background-color: #e5e5e5;
+}
+
+html *{ position: relative;}
+
+body{
+	
+}
+
+h1, h2, h3, h4, h5{
+	font-family: Infinity;
+	font-weight: 900;
+}
+
+/******************** Questions *************************/
+.QnItem{
+	position: relative;
+	margin: 1px;
+	height: 122px;
+}
+
+.QnBox{
+	width:210px;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	left: 83px;
+	display: inline-block;
+	padding-left: 2px;
+	-moz-border-radius: 0px 7px 7px 0px;
+	-webkit-border-radius: 0px 7px 7px 0px;
+	border-radius: 0px 7px 7px 0px;
+	-moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	background:rgba(180,180,180,0.4);
+	border:1px solid rgba(51,51,51,0.8);
+	color: black;
+}
+
+.QnBox p{
+	font-size: 28px;
+}
+
+.QnTagBox{
+	/**** The functionality of this class is really the same as qnPlaceHolder, therefore qnPlaceHolder will be used over this. ****/
+}
+
+.QnTag{
+	font-size: 16px;
+	height: 76px;
+	width: 76px;
+	display: inline-block;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	-moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	background:rgba(180,180,180,0.4);
+	border:1px solid rgba(51,51,51,0.8);
+	-moz-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+	-webkit-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+	box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+}
+.QnTag:hover{
+	cursor: move;
+	-moz-box-shadow:0 0 1px 1px rgba(255,255,255,0.4) inset, 0 0 6px 4px rgba(90,210,255,0.5);
+	-webkit-box-shadow:0 0 1px 1px rgba(255,255,255,0.4) inset, 0 0 6px 4px rgba(90,210,255,0.5);
+	box-shadow:0 0 1px 1px rgba(255,255,255,0.4) inset, 0 0 6px 4px rgba(90,210,255,0.5);
+}
+
+.QnTag input{
+	position: absolute;
+	top: 20px;
+	left: 2px;
+}
+
+/*Number Shadow for QnTag*/
+.QnItem .qnPlaceholder h1{
+	position:absolute;
+	left: 25px;
+	top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 3.6em;
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.QnItem .qnPlaceholder .QnTag h1{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 3.6em;
+	color: black;
+}
+
+.QnTag h1{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 3.6em;
+	color: black;
+}
+
+.QnCriticalBox{
+	font-size: 12px;
+	padding: 3px;
+	height: 31px;
+	width: 70px;
+	position: absolute;
+	top: 81px;
+	left: 0px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	-moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	background:rgba(180,180,180,0.4);
+	border:1px solid rgba(51,51,51,0.8);
+	-moz-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+	-webkit-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+	box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 6px 4px rgba(255,100,48,0.5);
+}
+
+.QnCriticalBox input{
+	left: 28px;
+}
+
+.window {
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	-moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	background:rgba(180,180,180,0.4);
+	border:1px solid rgba(51,51,51,0.8);
+}
+
+.controlPanel{
+	position: absolute;
+	top: 670px;
+	left: 0px;
+	width: 600px;
+	height: 40px;
+	transform: skew(-25deg);
+	-webkit-transform: skew(-25deg);
+	-moz-transform: skew(-25deg);
+	-ms-transform: skew(-25deg);
+	-o-transform: skew(-25deg);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.3);
+	background:rgba(180,180,180,0.4);
+	border: 1px solid rgba(51,51,51,0.8);
+	-webkit-box-shadow:  2px 4px 2px rgba(250, 250, 100, 0.6);
+    box-shadow:  2px 4px 4px 2px rgba(250, 250, 100, 0.6);
+}
+
+#saveButton{
+	left: 0px;
+	top: 0px;
+}
+#loadButton{
+	left: 72px;
+	top: 0px;
+}
+#discardButton{
+	left: 144px;
+	top: 0px;
+}
+#submitButton{
+	left: 804px;
+	top: 0px;
+	display: none;
+}
+
+#nextGroupButton{
+	left: 876px;
+	top: 0px;
+	display: none;
+}
+
+#homeButton{
+	left: 732px;
+	top: 0px;
+}
+
+
+.button{
+	width: 40px;
+	height: 20px;
+	background-color: red;
+	z-index: 100;
+}
+
+.messageDisplayer{
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	text-align: center;
+	color: orange;
+	min-height: 30px;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/****** One Grid in the 2D Array*****/
+.tableGrid, .qnPlaceholder{
+	display:inline-block;
+	min-height: 78px;
+	min-width: 78px;
+	max-height: 80px;
+	max-width: 80px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	/**positioning done this javascript**/
+}
+
+/****** One Grid in the Pyramid *****/
+.qnPlaceholder{
+	-webkit-box-shadow:  0px 0px 2px 2px rgba(47, 47, 47, 0.5);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(47, 47, 47, 0.5);
+    box-shadow:  0px 0px 2px 2px rgba(47, 47, 47, 0.5);
+}
+
+.qnPlaceholder:hover{
+	-moz-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 4px 4px rgba(41, 253, 0, 0.5);
+	-webkit-box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 4px 4px rgba(41, 253, 0, 0.5);
+	box-shadow:0 0 1px 1px rgba(255,255,255,0.6) inset, 0 0 4px 4px rgba(41, 253, 0, 0.5);
+}
+
+/******************** Containers *************************/
+#page{
+	position: relative;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+}
+
+#diagramContainer{
+	display: inline-block;
+	height: 460px;
+	padding: 5px;
+	width: 560px;
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	text-align: center;
+	z-index: 2;
+}
+
+#questionContainer{
+	display: inline-block;
+	height: 460px;
+	padding: 5px;
+	width: 310px;
+	position: absolute;
+	top: 45px;
+	left: 600px;
+	z-index: 2;
+	-moz-box-shadow: 0px -10px 10px  5px rgba(0,0,0,0.3), 0px +10px 10px  5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px -10px 10px  5px rgba(0,0,0,0.3), 0px +10px 10px  5px rgba(0,0,0,0.3);
+	box-shadow: 0px -10px 10px  5px rgba(0,0,0,0.3), 0px +10px 10px  5px rgba(0,0,0,0.3);
+	/*overflow-y:scroll;*/
+}
+
+#revertZone{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+#degreeBar{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	min-width:190px;
+	width: 300px;
+	height: 25px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-box-shadow:  0px 0px 20px 8px rgba(0, 0, 0, 0.6);
+    box-shadow:  0px 0px 20px 8px rgba(0, 0, 0, 0.6);
+}
+
+#degreeBar p{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#agreemarker{
+	float: right;
+	color: rgba(0, 255, 255, 0.7);
+}
+
+#disagreemarker{
+	float: left;
+	color: rgba(221, 63, 63, 0.7);
+}
+
+#dialog
+{
+	width:500px;
+ font-size:30;
+ color:white;	
+ text-shadow:2px 2px green;
+	
+	
+}
